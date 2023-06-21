@@ -6,7 +6,4 @@ Object Detection using Tensorflow-2 . With the help of @c17hawke (Sunny Bhaveen 
 ``` bash
 bash OD_configure.sh
 ```
-``` bash
-bash export_model.sh
-```
 
