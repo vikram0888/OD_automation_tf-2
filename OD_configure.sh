@@ -3,7 +3,8 @@ echo [$(date)]: "Started executing: "$BASH_SOURCE >> $__MY_ROOT__/test.log.txt
 echo [$(date)]: "START" >> $__MY_ROOT__/test.log.txt
 echo [$(date)]: "add test.log.txt to gitignore" >> $__MY_ROOT__/test.log.txt
 echo "test.log.txt" >> .gitignore
-echo [$(date)]: "Make sure you have installed protobuff" >> $__MY_ROOT__/test.log.txt
+echo [$(date)]: "protobuff installation" >> $__MY_ROOT__/test.log.txt
+pip install protobuf-compiler && protoc --version 
 echo [$(date)]: "Create TensorFlow dir and cd to it" >> $__MY_ROOT__/test.log.txt
 mkdir TensorFlow && cd TensorFlow
 echo [$(date)]: "clone TensorFlow/models repo" >> $__MY_ROOT__/test.log.txt
